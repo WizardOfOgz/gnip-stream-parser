@@ -1,1 +1,1 @@
-require File.join(File.dirname(__FILE__), "gnip_powertrack", "streamer")
+require File.join(File.dirname(__FILE__), "gnip", "powertrack_streamer")
