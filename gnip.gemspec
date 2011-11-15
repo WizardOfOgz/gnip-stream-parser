@@ -4,7 +4,7 @@ require "gnip/version"
 
 Gem::Specification.new do |s|
   s.name        = "gnip"
-  s.version     = GnipPowerTrack::VERSION
+  s.version     = Gnip::VERSION
   s.platform    = Gem::Platform::RUBY
   s.authors     = ["Andy Ogzewalla"]
   s.email       = ["andyogzewalla@gmail.com"]
@@ -14,7 +14,7 @@ Gem::Specification.new do |s|
 
   s.rubyforge_project = "gnip"
 
-  s.add_dependency 'yajl', '~> 0.8.2'
+  s.add_dependency 'yajl-ruby', '~> 0.8.2'
   s.add_development_dependency 'rspec', '~> 2.5.0'
   s.add_development_dependency 'rake'
 
