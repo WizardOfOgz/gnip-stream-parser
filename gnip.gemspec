@@ -8,9 +8,9 @@ Gem::Specification.new do |s|
   s.platform    = Gem::Platform::RUBY
   s.authors     = ["Andy Ogzewalla"]
   s.email       = ["andyogzewalla@gmail.com"]
-  s.homepage    = "https://github.com/WizardOfOgz/gnip_powertrack"
+  s.homepage    = "https://github.com/WizardOfOgz/gnip"
   s.summary     = %q{A library for streaming data from Gnip}
-  s.description = %q{This is a library for streaming data from Gnip Data Collector and Power Track feeds.}
+  s.description = %q{This is a library for streaming and parsing data from Gnip Data Collector and Power Track feeds.}
 
   s.rubyforge_project = "gnip"
 

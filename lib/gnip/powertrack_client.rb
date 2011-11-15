@@ -3,7 +3,7 @@ require 'uri'
 require 'net/http'
 
 module Gnip
-  class PowertrackStreamer
+  class PowertrackClient
 
     def initialize(url, username, password)
       raise "No username provided for call to #{self.class.name}#stream" if (username.nil? || (username.respond_to?(:empty?) && username.empty?))
