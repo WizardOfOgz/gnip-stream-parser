@@ -3,17 +3,7 @@ require 'uri'
 require 'net/http'
 
 module Gnip
-  class PowertrackClient
-
-    def initialize(url, username, password)
-      raise "No username provided for call to #{self.class.name}#stream" if (username.nil? || (username.respond_to?(:empty?) && username.empty?))
-      raise "No password provided for call to #{self.class.name}#stream" if (password.nil? || (password.respond_to?(:empty?) && password.empty?))
-      raise "No URL provided for call to #{self.class.name}#stream" if (url.nil? || (url.respond_to?(:empty?) && url.empty?))
-
-      @username = username
-      @password = password
-      @url = url
-    end
+  class PowertrackClient < Client
 
     # Streams and parses data from Gnip.  Once an entire activity stream object (JSON) has been parsed, the
     # resulting hash will be passed as an argument to the given block.
