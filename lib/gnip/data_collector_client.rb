@@ -3,7 +3,7 @@ require 'uri'
 require 'net/http'
 
 module Gnip
-  class PowertrackClient
+  class DataCollectorClient
 
     def initialize(url, username, password)
       raise "No username provided for call to #{self.class.name}#stream" if (username.nil? || (username.respond_to?(:empty?) && username.empty?))
@@ -25,7 +25,7 @@ module Gnip
         # Gnip session tokens expire after 2 minutes, so if a connection is lost it is likely that re-authentication is necessary.
         auth_uri = URI.parse(@url)
 
-        http = Net::HTTP.new(auth_uri.host, auth_uri.port) # Using net/http until EM issues can be resolved
+        http = Net::HTTP.new(auth_uri.host, auth_uri.port)
         http.use_ssl = true
         http.verify_mode = OpenSSL::SSL::VERIFY_NONE
         auth_request = Net::HTTP::Get.new(auth_uri.request_uri)
