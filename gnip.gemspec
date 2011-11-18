@@ -12,11 +12,8 @@ Gem::Specification.new do |s|
   s.summary     = %q{A library for streaming data from Gnip}
   s.description = %q{This is a library for streaming and parsing data from Gnip Data Collector and Power Track feeds.}
 
-  s.rubyforge_project = "gnip-stream-parser"
-
-  s.add_dependency 'eventmachine', '0.12.10'
-  s.add_dependency 'em-http-request', '0.3.0'
-  s.add_dependency 'gnip-stream', '0.0.1'
+  s.add_dependency 'eventmachine'
+  s.add_dependency 'em-http-request'
   s.add_dependency 'yajl-ruby', '~> 0.8.2'
   s.add_dependency 'sergio', '0.0.2'
   s.add_development_dependency 'rspec', '~> 2.5.0'
