@@ -27,6 +27,9 @@ class SergioActivityStreamPost
       element 'link', :attribute => 'href', :having => {:rel => 'alternate'} do |v| 
         REXML::Text::unnormalize(v)
       end
+      element 'link', 'target', :attribute => 'href', :having => {:rel => 'enclosure'} do |v| 
+        REXML::Text::unnormalize(v)
+      end
     end
 
     element 'activity:author', 'actor' do
