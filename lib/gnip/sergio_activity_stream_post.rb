@@ -14,6 +14,7 @@ class SergioActivityStreamPost
 
     element 'activity:object', 'object' do
       element 'title'
+      element 'subtitle'
       element 'thr:content'
       element 'content', 'summary'
 
