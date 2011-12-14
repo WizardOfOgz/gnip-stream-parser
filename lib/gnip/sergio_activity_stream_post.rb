@@ -47,7 +47,6 @@ class SergioActivityStreamPost
         end
       end
       element 'uri', 'link'
-      element 'id'
     end
 
     element 'activity:actor', 'actor' do
@@ -56,6 +55,7 @@ class SergioActivityStreamPost
       element 'os:aboutMe', 'summary' do |v|
         v if v.is_a?(String)
       end
+      element 'id'
     end
 
     element 'service:provider', 'provider' do
