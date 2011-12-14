@@ -47,6 +47,7 @@ class SergioActivityStreamPost
         end
       end
       element 'uri', 'link'
+      element 'id'
     end
 
     element 'activity:actor', 'actor' do
